@@ -1,0 +1,591 @@
+@font-face {
+    font-family: "netflix_font";
+    src: url(../fonts/NetflixSans_W_Rg.woff2);
+}
+
+@font-face {
+    font-family: "netflix_fontmd";
+    src: url(../fonts/NetflixSans_W_Md.woff2);
+}
+
+@font-face {
+    font-family: "netflix_fontblk";
+    src: url(../fonts/NetflixSans_W_Blk.woff2);
+}
+
+@font-face {
+    font-family: "netflix_fontbd";
+    src: url(../fonts/NetflixSans_W_Bd.woff2);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "netflix_font";
+}
+
+
+#main {
+    height: 100%;
+    width: 100vw;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.container_w {
+    position: relative;
+    /* max-width: 80%; */
+    max-width: 97%;
+    margin-inline: auto;
+}
+
+.thm_black {
+    background-color: black;
+    color: white;
+}
+
+.lang_dd select:focus {
+    outline: white solid 2px;
+    outline-offset: 0.15rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'netflix_fontblk';
+}
+
+input {
+    color: white !important;
+}
+
+.langsvg{
+color: white;
+}
+.scnd_sec_left,
+.scnd_sec_right,
+.thrd_sec_left,
+.thrd_sec_right,
+.frth_sec_left,
+.frth_sec_right,
+.fft_sec_left,
+.fft_sec_right {
+    padding-inline: 1rem;
+}
+
+.getstarted_btn {
+    text-decoration: none;
+
+}
+
+.getstarted_btn:hover {
+    color: white;
+}
+
+.signin_btn,
+.getstarted_btn {
+    font-family: 'netflix_fontmd';
+}
+
+.sectiondivider {
+    width: 100%;
+    height: 8px;
+    position: absolute;
+    bottom: -8px;
+    background-color: rgb(35, 35, 35);
+    z-index: 9999;
+}
+
+/* hero section start  */
+
+
+.landing_page {
+    width: 100%;
+    height: 100vh;
+}
+
+.landingpage_bg {
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.landingbg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* transform: scale(1.15) translate(0%,-5.5%); */
+    transform: scale(1.25) translateY(-10%);
+}
+
+/* .landingpage_bg::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: rgb(0 0 0 / 40%);
+    transform: scale(1.51) translate(0%,-5.5%);
+    
+     transform: scale(1.25) translateY(-10%);
+} */
+
+.landingpage_bg_overlay {
+    background: rgb(0 0 0 / 40%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+/* .header{
+    position: absolute;
+    top: 0;
+} */
+
+.header {
+    padding: .75rem 1rem;
+}
+
+.brandlogo svg {
+    width: 9rem;
+    height: 4rem;
+    fill: rgb(229, 9, 20);
+}
+
+.headright {
+    gap: 1.5rem;
+}
+
+.lang_dd select {
+    background: transparent;
+    width: auto;
+    min-width: 120px;
+    height: 35px;
+    border-radius: 3.5px;
+    color: white;
+    /* padding-inline: 6px; */
+    padding-left: 28px;
+}
+.langimg {
+    position: absolute;
+    top: 46%;
+    transform: translateY(-50%);
+    left: 10px;
+}
+
+.signin_btn {
+    width: 80px;
+    height: 35px;
+    background: rgb(229, 9, 20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    border-radius: 3.5px;
+    color: white;
+    transition: background .2s ease-in-out;
+    cursor: pointer;
+}
+
+.signin_btn:hover {
+    background: rgb(193, 17, 25);
+}
+
+.signin_btn a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.landing_midsection {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12rem 1rem;
+}
+
+.landing_midsection>h1 {
+    font-size: 48px;
+    font-weight: 900;
+    font-family: 'netflix_fontblk';
+    margin-bottom: 16px;
+}
+
+.landing_midsection>p:nth-child(2) {
+    font-size: 25px;
+    /* margin-top: 16px; */
+    margin-bottom: 0;
+    /* font-weight: 600; */
+}
+
+.landing_midsection p:nth-child(3) {
+    font-size: 20px;
+    margin-top: 24px;
+    /* font-weight: 600; */
+}
+
+.getstarted {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 36.625rem;
+
+}
+
+.getstarted_btn {
+    width: 37%;
+    min-width: 160px;
+}
+
+.hero_emailinput {
+    width: 63%;
+}
+
+.getstarted input,
+.getstarted input:focus {
+    background: #36363647;
+    box-shadow: none;
+    /* border-color: unset; */
+    border-radius: 3px;
+    border: 1px solid #ffffff59;
+
+}
+
+.getstarted input:focus {
+    outline: 2px solid white;
+    outline-offset: 0.15rem;
+}
+
+.getstarted label {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.getstarted input,
+.getstarted_btn {
+    height: 3.5rem !important;
+}
+
+.getstarted_btn {
+    background: rgb(229, 9, 20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    border-radius: 3.5px;
+    color: white;
+    font-size: 25px;
+    /* font-weight: 600; */
+    transition: background .2s ease-in-out;
+    cursor: pointer;
+}
+
+.getstarted_btn:hover {
+    background: rgb(193, 17, 25);
+}
+
+.getstarted_btn i {
+    font-size: 22px;
+    margin-left: 10px;
+}
+
+/* hero section end  */
+
+/* 2nd section  */
+
+.scnd_section {
+    width: 100%;
+    height: 100%;
+    /* background-color: black; */
+    color: white;
+    padding: 3rem 0;
+}
+
+
+.scnd_section h2 {
+    font-size: 48px;
+}
+
+.scnd_section p {
+    font-size: 24px;
+}
+
+.tvcontianer {
+    z-index: 0;
+}
+
+.vidcontainer {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    max-width: 74%;
+    max-height: 55%;
+    z-index: -1;
+}
+
+.thrd_section,
+.frth_section,
+.fft_section,
+.questions_section {
+    padding: 3rem 0;
+}
+
+.downloadingdemo {
+    width: 55%;
+    border: 2px solid rgba(128, 128, 128, 0.7);
+    border-radius: 12px;
+    padding: 8px 12px;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+}
+
+.downloadingdemo .showimg img {
+    height: 80px;
+    margin-right: 16px;
+}
+
+.downloadingdemo .name_n_status {
+    font-size: 14px;
+}
+
+.downloadingdemo .name_n_status .top {
+    font-weight: 600;
+}
+
+.downloadgif {
+    width: 50px;
+    height: 50px;
+}
+
+.downloadgif img {
+    width: 100%;
+}
+
+.thrd_sec_right h2,
+.fft_sec_right h2 {
+    font-size: 48px;
+}
+
+.thrd_sec_right p,
+.fft_sec_right p {
+    font-size: 24px;
+}
+
+.vidcontainer2 {
+    top: 32%;
+    max-width: 65%;
+}
+
+.frth_sec_left h2 {
+    font-size: 48px;
+}
+
+.frth_sec_left p {
+    font-size: 24px;
+}
+
+
+.ques_sec_head {
+    font-size: 48px;
+    font-family: 'netflix_fontblk';
+    margin-bottom: 24px;
+    padding-top: 1.5rem;
+}
+
+h2.accordion-header {
+    font-family: 'netflix_font';
+}
+
+.questionaccords .accordion-item {
+    margin-bottom: 8px;
+    background-color: #2d2d2d;
+    color: white;
+    border-bottom: none;
+    font-size: 25px;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #2d2d2d;
+    color: white;
+}
+
+.questionaccords button.accordion-button {
+    font-size: 25px;
+    padding: 1.5rem 1.25rem;
+    background-color: #2d2d2d;
+    color: white;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.questionaccords button.accordion-button::after {
+    display: none;
+}
+
+.questionaccords button.accordion-button .addicon {
+    width: 35px;
+    height: 35px;
+    rotate: 45deg;
+}
+
+button.accordion-button.collapsed .addicon {
+    rotate: 0deg;
+}
+
+.accordion-button:focus {
+    box-shadow: unset;
+}
+
+.getemailsec p {
+    font-size: 20px;
+    margin-top: 24px;
+}
+
+
+
+/* footer  */
+
+.footer {
+    padding-top: 72px;
+    padding-bottom: 72px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.footer .call {
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+
+.footer .call a {
+    color: inherit;
+}
+
+.footer ul li.footlink {
+    margin-bottom: 16px;
+}
+
+.footer ul li.footlink a {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* footer ends  */
+
+
+/* responsiveness */
+
+@media screen and (min-width:1280px){
+    .container_w{
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .header{
+        padding-inline: 0;
+    }
+    .brandlogo svg{
+        width: 5rem;
+        height: 1.5rem;
+    }
+    .headright{
+        gap:0.5rem;
+    }
+    .landing_page{
+        height: 100%;
+    }
+    .landing_midsection{
+        padding: 12rem 1rem 4rem;
+    }
+    .landing_midsection>h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .landing_midsection>p:nth-child(2),
+    .landing_midsection>p:nth-child(3) {
+        font-size: 18px;
+    }
+    .container_w{
+        max-width: 90%;
+    }
+
+    .scnd_section h2,.thrd_sec_right h2,.fft_sec_right h2,.frth_sec_left h2,.ques_sec_head{
+        font-size: 32px;
+    }
+    .scnd_section p, .thrd_sec_right p, .fft_sec_right p, .frth_sec_left p{
+        font-size: 18px;
+    }
+    .questionaccords button.accordion-button,.questionaccords .accordion-item,.getemailsec p{
+        font-size: 18px;
+    }
+    .questionaccords button.accordion-button .addicon{
+        width: 16px;
+        height: 16px;
+    }
+    .scnd_sec_left, .scnd_sec_right, .thrd_sec_left, .thrd_sec_right, .frth_sec_left, .frth_sec_right, .fft_sec_left, .fft_sec_right{
+        padding-inline: 0;
+    }
+    
+}
+
+@media screen and (max-width:685px) {
+    .getstarted{
+        flex-direction: column;
+    }
+    .getstarted_btn{
+        font-size: 18px;
+    }
+    .hero_emailinput {
+        width: 100%;
+    }
+    .container_w{
+        max-width: 100%;
+        padding-inline:1.5rem;
+    }
+    .landing_midsection {
+        padding: 2rem 1rem 2rem;
+    }
+    .getemailsec {
+        padding-inline: 1.5rem;
+    }
+}
+
+/* responsiveness ends  */
