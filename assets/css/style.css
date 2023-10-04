@@ -184,6 +184,7 @@ color: white;
     color: white;
     /* padding-inline: 6px; */
     padding-left: 28px;
+        border: 1px solid #767676;
 }
 .langimg {
     position: absolute;
