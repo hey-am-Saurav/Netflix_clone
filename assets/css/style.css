@@ -378,7 +378,11 @@ color: white;
 }
 
 .downloadingdemo .name_n_status .top {
-    font-weight: 600;
+/*     font-weight: 600; */
+        font-family: 'netflix_fontmd';
+}
+.downloadingdemo .name_n_status .bottom {
+    color: #0071eb;
 }
 
 .downloadgif {
@@ -586,6 +590,15 @@ button.accordion-button.collapsed .addicon {
     .getemailsec {
         padding-inline: 1.5rem;
     }
+    .downloadingdemo{
+        width:75%;
+        justify-content: start;
+    }
+    .downloadgif{
+        margin-left:auto;
+    }
+    .downloadingdemo .showimg img{
+        height:40px;
 }
 
 /* responsiveness ends  */
