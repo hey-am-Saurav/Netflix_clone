@@ -380,9 +380,11 @@ color: white;
 .downloadingdemo .name_n_status .top {
 /*     font-weight: 600; */
         font-family: 'netflix_fontmd';
+        font-size:16px;
 }
 .downloadingdemo .name_n_status .bottom {
     color: #0071eb;
+    font-size:14px;
 }
 
 .downloadgif {
@@ -599,6 +601,12 @@ button.accordion-button.collapsed .addicon {
     }
     .downloadingdemo .showimg img{
         height:40px;
+}
+    .downloadingdemo .name_n_status .top {
+        font-size:14px;
+}
+.downloadingdemo .name_n_status .bottom {
+    font-size:12px;
 }
 
 /* responsiveness ends  */
